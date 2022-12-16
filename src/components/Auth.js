@@ -18,7 +18,7 @@ const Auth = () => {
   })
 
   const sendRequest = async (type="signin") => {
-    const response = await axios.post(`http://localhost:5000/api/user/${type}`, {
+    const response = await axios.post(`https://lost-and-found-wim-api.onrender.com/api/user/${type}`, {
       email: inputs.email,
       password: inputs.password,
       name: inputs.name,

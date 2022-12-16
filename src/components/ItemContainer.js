@@ -22,7 +22,7 @@ const ItemContainer = ({id, name, description, image, foundat, email, number, us
   }
 
   const sendDeleteRequest = async () => {
-    const response = await axios.delete(`http://localhost:5000/api/item/${id}`)
+    const response = await axios.delete(`https://lost-and-found-wim-api.onrender.com/api/item/${id}`)
                                 .catch(err => console.log(err))
     const data = await response.data
 

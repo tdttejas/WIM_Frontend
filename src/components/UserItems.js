@@ -11,7 +11,7 @@ const UserItems = () => {
   const userId = localStorage.getItem('userId')
 
   const sendRequest = async () => {
-    const response = await axios.get(`http://localhost:5000/api/item/user/${userId}`)
+    const response = await axios.get(`https://lost-and-found-wim-api.onrender.com/api/item/user/${userId}`)
                                 .catch(err => console.log(err))
     const data = await response.data
     setUserName(data.items.name)

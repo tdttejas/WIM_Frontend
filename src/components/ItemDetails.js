@@ -19,7 +19,7 @@ const ItemDetails = () => {
     }
 
     const fetchItemDetails = async () => {
-        const response = await axios.get(`http://localhost:5000/api/item/${itemId}`)
+        const response = await axios.get(`https://lost-and-found-wim-api.onrender.com/api/item/${itemId}`)
                                     .catch(err => console.log(err))
         const data = await response.data
         return data

@@ -25,7 +25,7 @@ const AddItem = () => {
   }
 
   const sendRequest = async () => {
-    const response = await axios.post('http://localhost:5000/api/item/additem', {
+    const response = await axios.post('https://lost-and-found-wim-api.onrender.com/api/item/additem', {
       name: inputs.name,
       description: inputs.description,
       image: inputs.image,

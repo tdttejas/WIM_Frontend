@@ -8,7 +8,7 @@ const Items = () => {
   const [items, setItems] = useState()
 
   const sendRequest = async () => {
-    const response = await axios.get("http://localhost:5000/api/item")
+    const response = await axios.get("https://lost-and-found-wim-api.onrender.com/api/item")
                           .catch(err => console.log(err))
     const data = await response.data
 
